@@ -65,7 +65,7 @@ ASSIGNMENT.md               # Full brief — read this first
 | `DELETE` | `/tasks/:id`              | Delete a task (returns 204)              |
 | `PATCH`  | `/tasks/:id/complete`     | Mark a task as complete                  |
 | `GET`    | `/tasks/stats`            | Counts by status + overdue count         |
-| `PATCH`  | `/tasks/:id/assign`       | **Assign a task to a user** _(to implement)_ |
+| `PATCH`  | `/tasks/:id/assign`       | **Assign a task to a user** |
 
 ### Task shape
 
@@ -111,3 +111,13 @@ See [ASSIGNMENT.md](./ASSIGNMENT.md) for full submission requirements. At minimu
 - **Bug report** — what you found, where in the code, and why it's a bug (not just symptoms)
 - **At least one fix** — with a note on your approach
 - **`PATCH /tasks/:id/assign` implementation** — plus a short explanation of any design decisions (validation, edge cases, etc.)
+
+---
+
+## Submission Links
+
+- **GitHub repository:** https://github.com/wiz-abhi/untested-task-api-assignment
+- **Live API:** https://it-assignment.onrender.com/tasks
+- **Deployment:** Render Web Service
+
+The live service uses an in-memory store, so task data resets whenever the service restarts. The assignment endpoint is available at `PATCH /tasks/:id/assign`.
